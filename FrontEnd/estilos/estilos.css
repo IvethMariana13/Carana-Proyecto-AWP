@@ -1,0 +1,364 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    
+}
+header ul{
+    display: flex;
+    
+
+}
+header ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+ a{
+    text-decoration: none;
+    color: #7b4157;
+}
+
+header{
+    background: 
+    linear-gradient(rgba(68, 16, 58, 0.8),
+    rgba(243, 144, 243, 0.6)),url(../imagenes/portada.jpeg);
+    height: 100vh;
+    background-size: cover;
+}
+#contenedor-titulo-flex{
+    max-width: 1580px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    color: #7b4157;
+
+}
+h1{
+    font-size: 100px;
+    color: #b8749d;
+    margin:0;
+    
+}
+h2{
+    font-size: 50px;
+    color: #fff;
+    text-align-last: center;
+}
+.contenedor-titulo{
+    text-align: center;
+}
+.contenedor-titulo a, #sobre-mi a{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background:rgb(230, 150, 233);
+    padding: 14px 24px;
+    width: 180px;
+    display:inline-block;
+}
+p.logo{
+    color:#fff;
+    font-size: 20px;
+}
+nav ul li a{
+    color: #fff;
+}
+/*SESION SOBRE NOSOTROS*/
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: #7b4157;
+}
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+}
+#sobre-mi .texto{
+    width: 42%;
+}
+
+/*SERVICIOS*/
+.contenedor-servicios{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{
+    font-size:25px ;
+    margin:0;
+}
+
+.servicio p{
+    margin-bottom:20px ;
+    height:194px ;
+}
+.contenedor-servicios .violeta{
+    background-image: linear-gradient(to top, rgba(156, 10, 156, 0.333), #b990ce);
+    box-shadow: 0 12px 10px 0 rgba(180, 69, 162, 0.37);
+    
+}
+ 
+.contenedor-servicios .celeste{
+    background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86,163,222, .3);
+}
+.icono {
+    float: right;
+    position: relative;
+    
+}
+
+/*SECCION MIS TRABAJOS*/
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+span{
+    color:#71bcfa;
+}
+/*Por que trabajar conmigo*/
+.contenedor-porque{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.contenedor-porque h4{
+    margin:0;
+    font-size: 20px;
+}
+.contenedor-porque p{
+    font-size: 16px;
+    line-height: 26px;
+}
+.porque-singular{
+    width: 28%;
+}
+
+.blog{
+    background: #f9fafc;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+
+.accesorios img{
+    width: 100%;
+    height: 60%;
+
+}
+.accesorios h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    color:#7b4157;
+    text-align: center;
+}
+.accesorios p{
+    color: #9371a7;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 10px 20px 20px;
+    margin: 0;
+    text-align: justify;
+}
+.accesorios a{
+    background: rgb(155, 53, 133);
+    color:#fff;
+    display: inline-block;
+    margin-left: 33.3px;
+    font-size: 20px;
+    padding: 1px 20px 20px 20px;
+    text-align: center;
+}
+.blog img{
+    width: 90%;
+
+}
+.blog h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+}
+.blog p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 10px 20px 20px;
+    margin: 0;
+}
+.blog a{
+    background: rgb(51, 135, 190);
+    color:#fff;
+    display: inline-block;
+    margin-left: 33.3px;
+    font-size: 16px;
+    padding: 1px 20px 20px 20px;
+    
+}
+.pu1{
+    height:245px;
+}
+#que-esperas{
+    background: linear-gradient(rgb(162, 100, 219),rgba(236, 134, 214));
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+#que-esperas h3{
+    font-size: 23px;
+    color:#fff;
+    margin-bottom: 20px;
+}
+#que-esperas a{
+    color:#fff;
+    background-color:rgb(202, 51, 157);
+    padding: 15px 40px 15px 40px;
+    transition: 1s;
+}
+
+#que-esperas a:hover {
+    color:black;
+    transition: 1s;
+    transform: scale(1.1);
+    display: inline-block;
+}
+#whatsapp img{
+    width:44px;
+}
+#whatsapp a{
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+.menu-icon{
+    display: none;
+}
+
+.product-container img{
+    width: 300px;
+}
+.contenedor-publicaciones{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+}
+.product-container{
+    margin: 15px;
+    padding: 2px 16px;
+}
+.product-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,2);
+}
+
+.button-add{
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 26px;
+    background-color: white;
+    color: black;
+    border: 2px solid #724456;
+    transition-duration: 0.4s;
+
+}
+.button-checkout{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px 18px;
+    background-color: white;
+    color: black;
+    border: 2px solid #ec6e9e;
+    transition-duration: 0.4s;
+    position: relative;
+}
+.button-checkout:hover{
+    background-color: palevioletred;
+    color: wheat;
+}
+
+.button-add:hover{
+    background-color: palevioletred;
+    color: wheat;
+}
+.button-add.disabled{
+    font-size: 20px;
+    text-align: center;
+    border: 8px;
+    padding: 20px 26px;
+    background-color: white;
+    color: black;
+    border: 2px solid #9fa6ad;
+    transition-duration: 0.4s;
+
+}
+.button-add.disabled:hover{
+    background-color: #9fa6ad;
+    color: wheat;
+}
+
+/*Resposivilidad*/
+@media (max-width:480px){
+    /*Se va aplicar cuando el máximo de ancho sea de 480px*/
+    /*
+    header {
+        height: 50vh;
+    }*/
+    /*Menu responsivo*/
+    nav {
+        position: absolute;
+        top: 70px;
+        left:0px;
+        background: rgba(220, 84, 220, 0.8);
+        width: 100%;
+        display: none;
+    }
+    nav .lista{
+        flex-direction: column;
+        display:flex;
+    }
+    .menu-icon{
+        display: block;
+
+    }
+    .contenedor-titulo{
+        height: 50px;
+        margin-top:40px;
+        color:#7b4157;
+    }
+    h1{
+        font-size: 49px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    .contenedor-sobremi{
+        flex-direction: column;
+    }
+    .contenedor p{
+        width: 90px;
+    }
+    .product-container {
+        margin-left: 20px;
+    }
+    .product-container{
+        width: 300px;
+    }
+
+
+}
