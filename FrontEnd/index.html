@@ -1,7 +1,7 @@
 <!doctype html><html>
     <head>
         <meta charset="utf-8">
-        <link rel="manifest" href="files/manifest.json">
+        <link rel="manifest" href="manifest.json">
     <meta name="description" content="Joyeria Carana">
     <meta name="theme-color" content="6200ee">
     <meta name="apple-mobile-web-app-title" content="Carana">
@@ -12,7 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <script src="scripts.js"></script>
+    <script src="../app.js"></script>
 </head>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js?'+Math.random()+'')
+      });
+    }
+    </script>
 
 <body>
     <header>
@@ -21,7 +29,7 @@
                 <p class="logo">Joyería Carana</p>
                 <img  class="menu-icon" src alt="">
                 
-                <nav>
+                <nav class="nav">
                     <ul class="lista">
                         <li><a href="">Sobre nosotros</a></li>
                         <li><a href="">Home</a></li>
@@ -75,20 +83,27 @@
         </section>
         
         <section id="mis-trabajos">
-            <div class="contenedor">
+            <div class="container">
                 <h3>Referencias </h3>
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="../public/imagenes/ej1 (10).jpeg" ></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (2).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (3).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (4).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (5).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (6).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (7).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (8).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (9).jpeg"></div>
-                    <div class="item"><img src="../public/imagenes/ej1 (1).jpeg"></div>
-                </div>
+                <div class="owl-carousel-owl-theme">
+                    <div class="item"><img class="pu" src="imagenes/ej.jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (2).jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (3).jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (4).jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (5).jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (6).jpeg"></div>
+                    <div class="item"><img class="pu" src="imagenes/ej1 (7).jpeg"></div>
+                    <br>
+                    <button id="snap">Agregar Referencia</button>
+                    <br>
+                    <canvas id="foto" width="640" height="480"></canvas>
+                    <br>
+                    <button id="take-photo">Tomar foto</button>
+                    <br>
+                    <video id="video" width="640" height="480" autoplay></video>
+                    <script src="camara.js"></script>
+                    <!--<canvas id="canvas" width="640" height="480"></canvas>-->
+                </div> 
             </div>
         </section >
         
@@ -97,24 +112,20 @@
                 <h3>¿Por qué comprar en carana?</h3>
                 <div class="contenedor-porque">
                     <div class="porque-singular">
-                        <img src="imagenes/velocidad (1).png">
+                        <img class="pu1" src="imagenes/velocidad (1).png">
                             <h4>Calidad</h4>
-                            <p>Me aseguro de que tu web cargue entre 2 y 4 segundos
-                            (Depende de la velocidad del sitio).Si una web tarda más de 
-                            5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar.
+                            <p>Te ofrecemos producto de una buena calidad.
                             </p>
                     </div> 
                     <div class="porque-singular">
-                        <img src="imagenes/Asesoramiento.png" >
+                        <img class="pu1" src="imagenes/Asesoramiento.jpg" >
                             <h4>Precio</h4>
-                            <p>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenidor 
-                            mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web. </p>
+                            <p>Precios accesibles acorde a tus necesidades.</p>
                     </div>   
                     <div class="porque-singular">
-                        <img src="imagenes/mobile_phone_14388.png">
+                        <img class="pu1" src="imagenes/mobile_phone_14388.png">
                         <h4>Seguridad en tus compras</h4>
-                        <p>Cada vez más personas navegan desde sus celulares en cualquier parte del mundo.
-                        Me aseguro de que tu web este optimizada para cualquier tipo de dispositivo móvil.</p>
+                        <p>Te garantizamos una compra segura, siempre recibiras tu producto en buenas condiciones y a tiempo.</p>
                     </div>                 
                 </div>
             </div>
@@ -124,13 +135,13 @@
                 <h3>Blog</h3>
                 <div class="contenedor-publicaciones">
                     <div class="publicacion">
-                        <img class="pu1" src="imagenes/publicacion1.jpg" >
+                        <img class="pu1" src="imagenes/publicacion1.jpeg" >
                         <h4>¿Como mantener mis joyas con brillo?</h4>
                         <p>Los mejores tips para mantener tus accesorios brillantes</p>
                         <a> Leer más <i class="fas fa-arrow-right"></i> </a>
                     </div>
                     <div class="publicacion">
-                        <img  class="pu1"src="imagenes/publicacion3.jpg" alt="">
+                        <img  class="pu1"src="imagenes/publicacion2.jpg" alt="">
                         <h4>¿Qué cuidados debo tener con mis joyas?</h4>
                         <p> los cuidados esenciales para mantener tus joyas como nuevas, sin desgaste alguno.
                         </p>
@@ -185,7 +196,7 @@
             </div>
         </section>
         <section id="whatsapp">
-            <a href="https://wa.me/4951198113"><img src="imagenes/whatsapp.png"class="img" alt=""></a>
+            <a href="https://wa.me/4951198113"><img src="FrontEnd/imagenes/whatsapp.png"class="img" alt=""></a>
         </section>
         
 
@@ -221,10 +232,12 @@
     </script>
     </div>
     <script>
-        if('serviceWorker' in vavigador){
-            window.addEventListener('load', ()=> {
-                navigator.serviceWorker.register('service-worker.js').then((reg)=>{
+        if('serviceWorker' in navigador){
+            window.addEventListener('load',function(){
+                navigator.serviceWorker.register('sw.js').then(function(registration){
                     console.log("service worker regisrered", reg);
+                },function(err){
+                    console.log('SW Fallo', err);
                 })
             })
         }

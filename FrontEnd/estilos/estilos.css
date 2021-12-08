@@ -6,7 +6,6 @@ body{
 header .contenedor {
     display: flex;
     justify-content: space-between;
-    
 }
 header ul{
     display: flex;
@@ -28,6 +27,7 @@ header{
     rgba(243, 144, 243, 0.6)),url(../imagenes/portada.jpeg);
     height: 100vh;
     background-size: cover;
+
 }
 #contenedor-titulo-flex{
     max-width: 1580px;
@@ -213,6 +213,11 @@ span{
 .pu1{
     height:245px;
 }
+.pu{
+    height:450px;
+    justify-content: space-evenly;
+}
+
 #que-esperas{
     background: linear-gradient(rgb(162, 100, 219),rgba(236, 134, 214));
     text-align: center;
@@ -321,7 +326,7 @@ span{
     }*/
     /*Menu responsivo*/
     nav {
-        position: absolute;
+        position: fixed;
         top: 70px;
         left:0px;
         background: rgba(220, 84, 220, 0.8);
@@ -359,6 +364,24 @@ span{
     .product-container{
         width: 300px;
     }
+}
+#snap{
+    border: 2px solid #724456;
+    color:#724456;
+    background-color: white;
+    font-size: larger;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
 
-
+#take-photo{
+    border: 2px solid #724456;
+    color:white;
+    background-color:#7b4157;
+    font-size: larger;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.item{
+    float: left;
 }

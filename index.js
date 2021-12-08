@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -13,7 +13,7 @@ let products = [
         price: 160,
         image: "imagenes/plata.jpeg",
         material: "plata .925",
-        stock: 3,  
+        stock: 50,  
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ let products = [
       price : 160,
       image: "imagenes/collar.jpeg",
       material: "Acero inoxidable",
-      stock: 3,
+      stock: 50,
     },
     {
       id: 3,
